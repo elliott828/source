@@ -40,11 +40,8 @@ mtcars                                                              %>%
   ggvis(~hp, ~mpg, fill := "blue")                                  %>%
   layer_points()
 ```
-<<<<<<< HEAD
+
 ![img1](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot1.png)
-=======
-![img1](/img/codage8-plot1.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Noticed that the coordinates, properties can be moved to the `layer_<marks>()`, `ggvis()` can generates plot without `layer_<marks>()`. Those will all be concretely introduced in the following part.
 
@@ -58,11 +55,8 @@ mtcars                                                              %>%
   layer_points()                                                    %>%
   layer_smooths()
 ```
-<<<<<<< HEAD
+
 ![img2](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot2.png)
-=======
-![img2](/img/codage8-plot2.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 We specify `~hp, ~mpg, stroke := "blue"` in `ggvis()`, they are applied on all the layers: respectively on `layer_points()` and `layer_smooths()` for the color of border of the points and the color of the smooth line. By default the `fill` color of points is black.
 
@@ -75,11 +69,8 @@ mtcars                                                              %>%
   layer_smooths(stroke := "red")                                    %>%
   layer_model_predictions(model = "lm", stroke := "navy")
 ```
-<<<<<<< HEAD
+
 ![img3](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot3.png)
-=======
-![img3](/img/codage8-plot3.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The properties are declared locally and both layers use `stroke` but the property works sperately in 2 layers and `fill` has no impact on `layer_smooths()`. Why we keep `~hp, ~mpg` in `ggvis()`? Because the program doesn't have to run them twice in each layer. Keeping them in `ggvis()` makes it more efficient.
 
@@ -95,11 +86,8 @@ pressure                                                            %>%
         fill = ~pressure, size = ~temperature)                      %>%
   layer_points()
 ```
-<<<<<<< HEAD
+
 ![img4](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot4.png)
-=======
-![img4](/img/codage8-plot4.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 If you directly pass a string with quotation mark to it, `ggvis` read it as a raw value.
 
@@ -109,11 +97,8 @@ pressure                                                            %>%
         fill := "skyblue", size := 80)                              %>%
   layer_points()
 ```
-<<<<<<< HEAD
+
 ![img5](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot5.png)
-=======
-![img5](/img/codage8-plot5.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 *settings vs. mapping only works for a property instead of a parameter.*
 You could directly use `=` + values for a parameter.
@@ -151,11 +136,8 @@ pressure                                                          %>%
   ggvis(~temperature, ~pressure, fill := "red", opacity := .4)    %>% 
   layer_bars(width = 15)
 ```
-<<<<<<< HEAD
+
 ![img6](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot6.png)
-=======
-![img6](/img/codage8-plot6.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 # histogram
@@ -163,11 +145,8 @@ iris                                                              %>%
   ggvis(~Sepal.Length, fill := "red", opacity := .7)              %>% 
   layer_histograms(width = 0.5)
 ```
-<<<<<<< HEAD
+
 ![img7](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot7.png)
-=======
-![img7](/img/codage8-plot7.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 # freqpoly
@@ -176,11 +155,8 @@ iris                                                              %>%
   layer_freqpolys(width = 0.5, fill := "red", fillOpacity := .3,
                   strokeWidth := 3, stroke := "orange")
 ```
-<<<<<<< HEAD
+
 ![img8](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot8.png)
-=======
-![img8](/img/codage8-plot8.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Frequency polygon treats the continuous data in the same logic as histogram but use a line to describe the frequency evolution across ranges. Notice that I use `fillOpacity` instead of `opacity` in the third plot. That means the transparency effect is not applied on the stroke (not applied on every layer). By default there is nothing filled under the curve of frequency polygon, since we specify it, the region is filled by transparent red.
 
@@ -194,11 +170,8 @@ iris                                                              %>%
   layer_boxplots(size := 20, width = .7, strokeOpacity := .7,
                  strokeWidth := 2, fill = ~Species)
 ```
-<<<<<<< HEAD
+
 ![img9](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot9.png)
-=======
-![img9](/img/codage8-plot9.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 *Currently the `layer_boxplots()` seems to have a bit problems under `ggvis` (version 0.4.2) when we modify the value of `size` - the mustach move but the boxes don't. Waiting for the package update.*
 
@@ -211,11 +184,8 @@ faithful                                                          %>%
   ggvis(~waiting)                                                 %>%
   layer_densities(stroke := "red", fill := "red", area = FALSE)
 ```
-<<<<<<< HEAD
+
 ![img10](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot10.png)
-=======
-![img10](/img/codage8-plot10.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 You can specify the `area` parameter to decide whether there should be a shaded region drawn under the curve. In the chunk above, even you assign "red" to `fill`, there is nothing under the density curve (the dault setting is to draw a grey shadow).
 
@@ -230,11 +200,8 @@ mtcars                                                            %>%
   layer_lines(stroke := "red")                                    %>%
   layer_paths(stroke := "skyblue")
 ```
-<<<<<<< HEAD
+
 ![img11](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot11.png)
-=======
-![img11](/img/codage8-plot11.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 It seems that the `layer_paths()` is chaos, but it is not. It plots starting from the very first record until the last. Let's reorder the dataset.
 
@@ -246,11 +213,8 @@ mtcars                                                            %>%
               strokeOpacity := .5)                                %>%
   layer_paths(strokeWidth := 1)
 ```
-<<<<<<< HEAD
+
 ![img12](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot12.png)
-=======
-![img12](/img/codage8-plot12.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Now `layer_paths()` have same trend as `layer_lines()`. `layer_paths()` is more powerful on geographical plots.
 
@@ -259,22 +223,16 @@ library(maps)
 texas <- ggplot2::map_data("state", region = "texas")
 texas %>% ggvis(~long, ~lat) %>% layer_paths()
 ```
-<<<<<<< HEAD
+
 ![img13](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot13.png)
-=======
-![img13](/img/codage8-plot13.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 lines and paths plot can also use `fill` property.
 
 ``` r
 texas %>% ggvis(~long, ~lat) %>% layer_paths(fill := "darkorange")
 ```
-<<<<<<< HEAD
+
 ![img14](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot14.png)
-=======
-![img14](/img/codage8-plot14.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Scatterplot
 
@@ -285,11 +243,8 @@ mtcars                                                            %>%
   ggvis(~hp, ~mpg)                                                %>%
   layer_points(shape := "triangle-up", fill = ~factor(cyl))
 ```
-<<<<<<< HEAD
+
 ![img15](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot15.png)
-=======
-![img15](/img/codage8-plot15.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 `factor()` converts `cyl` from numeric to categorical data and that makes the plot more clear.
 
@@ -300,20 +255,14 @@ mtcars                                                            %>%
 ``` r
 mtcars %>% ggvis(~wt, ~mpg) %>% layer_smooths()
 ```
-<<<<<<< HEAD
+
 ![img16](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot16.png)
-=======
-![img16](/img/codage8-plot16.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 mtcars %>% ggvis(~wt, ~mpg) %>% layer_smooths(se = T)
 ```
-<<<<<<< HEAD
+
 ![img17](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot17.png)
-=======
-![img17](/img/codage8-plot17.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 mtcars                                                            %>% 
@@ -322,11 +271,8 @@ mtcars                                                            %>%
   layer_model_predictions(formula = mpg ~ wt, model = "lm",
                           stroke := "red", strokeOpacity := .5)
 ```
-<<<<<<< HEAD
+
 ![img18](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot18.png)
-=======
-![img18](/img/codage8-plot18.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 If you don't specify the `formula` argument in `layer_model_predictions()`, `ggvis` will guess it based on the input in the global data space of `ggvis()`.
 
@@ -355,11 +301,8 @@ mtcars                                                            %>%
   ggvis(~pred_, ~resp_)                                           %>%
   layer_paths(stroke := "blue")
 ```
-<<<<<<< HEAD
+
 ![img19](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot19.png)
-=======
-![img19](/img/codage8-plot19.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The chunk returns the same line as the `layer_model_predictions()` did before. `layer_smooths()` and `layer_densities()` can be splitted to 2 steps in the same way.
 
@@ -384,11 +327,8 @@ iris                                                              %>%
   ggvis(x = ~xmin_, x2 = ~xmax_, y = 0, y2 = ~count_)             %>% 
   layer_rects(fill := "red", opacity := .7)
 ```
-<<<<<<< HEAD
+
 ![img20](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot20.png)
-=======
-![img20](/img/codage8-plot20.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Equivalence of Density Plot
 
@@ -400,11 +340,8 @@ faithful                                                          %>%
   ggvis(~pred_, ~resp_)                                           %>%
   layer_lines(stroke := "red", fill := "red", fillOpacity := 0.5)
 ```
-<<<<<<< HEAD
+
 ![img21](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot21.png)
-=======
-![img21](/img/codage8-plot21.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Equivalence of Barchart
 
@@ -417,11 +354,8 @@ pressure                                                          %>%
   ggvis(x = ~xmin_, x2 = ~xmax_, y = 0, y2= ~count_)              %>% 
   layer_rects(fill := "red", opacity := .5)
 ```
-<<<<<<< HEAD
+
 ![img22](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot22.png)
-=======
-![img22](/img/codage8-plot22.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 In `compute_align()`, `length` limits the length of an interval. It's equivalent to the `width` in `layer_bars()`
 
@@ -434,11 +368,8 @@ mtcars                                                            %>%
   layer_rects(x = ~cyl - 0.5, x2 = ~cyl + 0.5, 
               y = ~stack_upr_, y2 = ~stack_lwr_)
 ```
-<<<<<<< HEAD
+
 ![img23](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot23.png)
-=======
-![img23](/img/codage8-plot23.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 `compute_stack()` generates 3 new variables based on data source: `group__`, `stack_upr_` and `stack_lwr_`. The latter 2 variables indicate the upper and lower y coordinates of each stack.
 
@@ -459,11 +390,8 @@ FordSales                                                         %>%
               y = ~stack_upr_, y2 = ~stack_lwr_)
 # You may find the ticks on x-axis are not appropriate.
 ```
-<<<<<<< HEAD
+
 ![img24](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot24.png)
-=======
-![img24](/img/codage8-plot24.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The compound way to realize a layer helps to understand how the high level layer is generated, and gives you a way to grab the key data for plotting.
 
@@ -477,11 +405,8 @@ FordSales                                                         %>%
   ggvis(~factor(Year), ~Sales)                                    %>%
   layer_bars(fill = ~Car, fillOpacity := .5, width = 0.6)
 ```
-<<<<<<< HEAD
+
 ![img25](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot25.png)
-=======
-![img25](/img/codage8-plot25.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 `group_by()` also works for multiple variables.
 
@@ -491,11 +416,8 @@ mtcars                                                            %>%
   ggvis(~mpg, fill = ~factor(cyl))                                %>%
   layer_densities()
 ```
-<<<<<<< HEAD
+
 ![img26](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot26.png)
-=======
-![img26](/img/codage8-plot26.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Interactive Output
 ------------------
@@ -519,11 +441,8 @@ mtcars                                                            %>%
   ggvis(~wt, ~mpg)                                                %>%
   layer_smooths(se = input_checkbox(label = "Confidence interval"))
 ```
-<<<<<<< HEAD
+
 ![img27](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot27.png)
-=======
-![img27](/img/codage8-plot27.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 You can also split the plotting steps if the input clause is too long.
 
@@ -535,11 +454,8 @@ mtcars                                                            %>%
   ggvis(~wt, ~mpg)                                                %>%
   layer_model_predictions(model = model_type)
 ```
-<<<<<<< HEAD
+
 ![img28](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot28.png)
-=======
-![img28](/img/codage8-plot28.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Selection from A List
 
@@ -559,11 +475,8 @@ faithful                                                          %>%
                                         "blue", "green")))        %>% 
   layer_points()
 ```
-<<<<<<< HEAD
+
 ![img29](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot29.png)
-=======
-![img29](/img/codage8-plot29.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 mtcars                                                            %>% 
@@ -573,11 +486,8 @@ mtcars                                                            %>%
                             map = as.name))                       %>% 
   layer_points()
 ```
-<<<<<<< HEAD
+
 ![img30](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot30.png)
-=======
-![img30](/img/codage8-plot30.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 # input_radiobuttons()
@@ -588,11 +498,8 @@ mtcars                                                            %>%
     selected = "loess",
     label = "Model type"))
 ```
-<<<<<<< HEAD
+
 ![img31](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot31.png)
-=======
-![img31](/img/codage8-plot31.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 # input_checkboxgroup()
@@ -608,11 +515,8 @@ mtcars                                                            %>%
     )
   )
 ```
-<<<<<<< HEAD
+
 ![img32](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot32.png)
-=======
-![img32](/img/codage8-plot32.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The argument `map` should be function with one single argument and returns a modified value based on this funciton. **When you maps the variable name to a property, remember to use`=` instead of `:=`**
 
@@ -626,11 +530,8 @@ mtcars                                                            %>%
   layer_histograms(width = input_slider(label = "Choose a binwidth:", 
                                         min = 1, max = 20))
 ```
-<<<<<<< HEAD
+
 ![img33](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot33.png)
-=======
-![img33](/img/codage8-plot33.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Numeric & Text Input Box
 
@@ -642,11 +543,9 @@ mtcars                                                            %>%
   layer_histograms(width = input_numeric(label = "Choose a binwidth:", 
                                          value = 1))
 ```
-<<<<<<< HEAD
+
 ![img34](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot34.png)
-=======
-![img34](/img/codage8-plot34.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
+
 
 To control the fill color, you could use `select_text()`.
 
@@ -656,11 +555,8 @@ mtcars                                                            %>%
   layer_histograms(fill := input_text(label = "Choose a color:", 
                                       value = "skyblue"))
 ```
-<<<<<<< HEAD
+
 ![img35](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot35.png)
-=======
-![img35](/img/codage8-plot35.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Axes, Legends & Scales
 ----------------------
@@ -676,11 +572,8 @@ faithful                                                          %>%
   add_axis("y", title = "Duration of eruption (m)")               %>%
   add_axis("x", title = "Time since previous eruption (m)")
 ```
-<<<<<<< HEAD
+
 ![img36](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot36.png)
-=======
-![img36](/img/codage8-plot36.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The first argument specify horizontal or vertical axis. Use `title` to name the axes. You can add more details:
 
@@ -693,11 +586,8 @@ faithful                                                          %>%
   add_axis("x", title = "Time since previous eruption (m)",
            values = seq(50, 90, 10), subdivide = 9, orient = "top")
 ```
-<<<<<<< HEAD
+
 ![img37](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot37.png)
-=======
-![img37](/img/codage8-plot37.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 Compare carefully the difference between the 2 plots and you will find what do those arguments serve for.
 
@@ -711,11 +601,8 @@ pressure                                                          %>%
   layer_points()                                                  %>%
   add_legend("fill", title = "~ pressure")
 ```
-<<<<<<< HEAD
+
 ![img38](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot38.png)
-=======
-![img38](/img/codage8-plot38.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 `ggvis` will create a separate legend for each property that you use. To do this, you just need to feed `add_legend()` a vector of property names as its first argument. The code below creates legend for 3 properties: `fill`, `shape` and `size`.
 
@@ -729,11 +616,8 @@ faithful                                                          %>%
   add_legend(c("fill", "shape", "size"), title = "~ duration (m)", 
              orient = "left", values = c(2,3,4,5))
 ```
-<<<<<<< HEAD
+
 ![img39](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot39.png)
-=======
-![img39](/img/codage8-plot39.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ### Scales
 
@@ -746,11 +630,8 @@ mtcars                                                            %>%
   scale_numeric("fill", range = c("red", "yellow"))               %>%
   scale_numeric("stroke", range = c("darkred", "orange"))
 ```
-<<<<<<< HEAD
+
 ![img40](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot40.png)
-=======
-![img40](/img/codage8-plot40.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 The chunk above maps the value of `disp` on the scale range between `red` and `yellow` for `fill` color, between `darkred` and `orange` for `stroke` color.
 
@@ -762,11 +643,8 @@ mtcars                                                            %>%
   layer_points()                                                  %>%
   scale_nominal("fill", range = c("purple", "blue", "green"))
 ```
-<<<<<<< HEAD
+
 ![img41](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot41.png)
-=======
-![img41](/img/codage8-plot41.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 You can adjust any visual property in your graph with a scale (not just color). For example you can specify the opacity and the domain of axes.
 
@@ -776,11 +654,8 @@ mtcars                                                            %>%
   layer_points()                                                  %>%
   scale_numeric("opacity", range = c(.2, 1))
 ```
-<<<<<<< HEAD
+
 ![img42](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot42.png)
-=======
-![img42](/img/codage8-plot42.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 ``` r
 mtcars                                                            %>% 
@@ -789,11 +664,8 @@ mtcars                                                            %>%
   scale_numeric("y", domain = c(0, NA))                           %>%
   scale_numeric("x", domain = c(0, 6))
 ```
-<<<<<<< HEAD
+
 ![img43](http://7xndoy.com1.z0.glb.clouddn.com/codage8-plot43.png)
-=======
-![img43](/img/codage8-plot43.png)
->>>>>>> 9c59c24b32345a452f4eed352acbb12b705e1ef1
 
 `scale_numeric("y", domain = c(0, NA))` means there is no limit on the maximum value on the y-axis.
 

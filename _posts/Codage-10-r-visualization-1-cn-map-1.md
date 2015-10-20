@@ -12,9 +12,9 @@ The files (of different format) used for plotting geometry graphics are called A
 
 For the current subject, we only need the 3 files.
 
--   [`bou2_4p.shp`](https://github.com/h12w/go-shapefile/blob/master/map/bou2_4p.shp?raw=true): The main file that stores the feature geometry.
--   [`bou2_4p.dbf`](https://github.com/h12w/go-shapefile/blob/master/map/bou2_4p.dbf?raw=true): The dBASE table that stores the attribute information of features. **There is a one-to-one relationship between geometry and attributes**, which is based on record number. Attribute records in the dBASE file must be in the same order as records in the main file.
--   [`bou2_4p.shx`](https://github.com/h12w/go-shapefile/blob/master/map/bou2_4p.shx?raw=true): The index file that stores the index of the feature geometry.
+-   [`bou2_4p.shp`](http://note.youdao.com/share/?id=1d7447acad7976a355d795f1dea6abbf&type=note): The main file that stores the feature geometry.
+-   [`bou2_4p.dbf`](http://note.youdao.com/share/?id=ea75b3342d26a4b93def35635899d8dd&type=note): The dBASE table that stores the attribute information of features. **There is a one-to-one relationship between geometry and attributes**, which is based on record number. Attribute records in the dBASE file must be in the same order as records in the main file.
+-   [`bou2_4p.shx`](http://note.youdao.com/share/?id=3d1e0c02ab9cde35125880a6e440e9c2&type=note): The index file that stores the index of the feature geometry.
 
 We use 4 packages for the study.
 
