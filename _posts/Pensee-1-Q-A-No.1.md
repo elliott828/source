@@ -1,4 +1,4 @@
-title: 'Q & A - Issue No.1 - 人类智慧 vs. 人工智能'
+title: 随想录1 - 人类智慧 vs. 人工智能
 date: 2015-09-07 21:49:24
 categories: Pauvreté de pensée
 tags: [Q&A, 人工智能]

@@ -1,10 +1,12 @@
-title: R Visualization Series - Bubbles and Bar Charts on China Map
+title: R Visual. - Bubbles and Bar Charts on China Map
 date: 2015-10-18 23:24:12
 categories: Codage
 tags: [R, visualization, ggvis, ggplot2]
 ---
 
 Keep exploring the things we can do on a map with `ggplot2` and `ggvis`.
+
+<!-- more -->
 
 About visualization on a map:
 
@@ -43,7 +45,9 @@ library(ggvis)
 Sys.setlocale("LC_ALL", "chinese")
 ```
 
-  [1] "LC_COLLATE=Chinese (Simplified)_People's Republic of China.936;LC_CTYPE=Chinese (Simplified)_People's Republic of China.936;LC_MONETARY=Chinese (Simplified)_People's Republic of China.936;LC_NUMERIC=C;LC_TIME=Chinese (Simplified)_People's Republic of China.936"
+```
+## [1] "LC_COLLATE=Chinese (Simplified)_People's Republic of China.936;LC_CTYPE=Chinese (Simplified)_People's Republic of China.936;LC_MONETARY=Chinese (Simplified)_People's Republic of China.936;LC_NUMERIC=C;LC_TIME=Chinese (Simplified)_People's Republic of China.936"
+```
 
 Load and clean the raw data. Get 2 data frame `cnmapdf` and `cap_coord` as we did in the [previous visualization article](http://papacochon.com/2015/10/15/Codage-11-r-visualization-2-cn-map-2/).
 
@@ -77,13 +81,14 @@ ggplot()                                                                 +
   scale_size_area(max_size=20)
 ```
 
-[vis3-plot1](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot1.png)
+![vis3-plot1](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot1.png)
 
 ### Bubbles with Effect of Heat Map - `ggplot2`
 Calculate the growth rate the private car from 2008 to 2013, assign the data to argument `fill` of `geom_point()`.
 
 ``` r
-cap_bubble["growth"] <- subset(car_prov, year == 2013)[,3,drop = F] / subset(car_prov, year == 2008)[,3,drop = F]-1
+cap_bubble["growth"] <- subset(car_prov, year == 2013)[,3,drop = F] / 
+  subset(car_prov, year == 2008)[,3,drop = F]-1
 
 ggplot()                                                                 +
   geom_polygon(data = cnmapdf, aes(long, lat, group = group), 
@@ -95,7 +100,7 @@ ggplot()                                                                 +
   scale_size_area(max_size=20)
 ```
 
-[vis3-plot2](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot2.png)
+![vis3-plot2](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot2.png)
 
 The bubbles with transparency cannot display the difference clearly when the growth rates are similar across provinces. Let's try smaller bubbles without specifying the transparency. We can also remove the legend to keep the map simple and clear.
 
@@ -110,7 +115,7 @@ ggplot()                                                                 +
   theme(legend.position = "none")    
 ```
 
-[vis3-plot3](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot3.png)
+![vis3-plot3](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot3.png)
 
 It seems that from 2008 to 2013, Hainan and Gansu are the 2 provinces with the quickest growth.
 
@@ -129,7 +134,7 @@ cnmapdf                                                                 %>%
   add_axis("y", title = "Latitude")
 ```
 
-[vis3-plot4](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot4.png)
+![vis3-plot4](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot4.png)
 
 To remove the legend, `ggvis` provides `hide_legend()`, within this function, you can specify the names of scales to be hidden. 
 
@@ -167,7 +172,7 @@ p1 <- ggplot()                                                           +
 p1
 ```
 
-[vis3-plot5](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot5.png)
+![vis3-plot5](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot5.png)
 
 We could add more details, i.e. the avg. growth rate in the from 2003 to 2013.
 
@@ -203,7 +208,7 @@ p1                                                                       +
                               "%", sep = "")))
 ```
 
-[vis3-plot6](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot6.png)
+![vis3-plot6](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot6.png)
 
 ### Bar Charts by `ggvis`
 It is the same logic to plot by `ggvis`.
@@ -240,16 +245,16 @@ cnmapdf                                                                 %>%
              stroke:= "black", align:="left")
 ```
 
-[vis3-plot7](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot7.png)
+![vis3-plot7](http://7xndoy.com1.z0.glb.clouddn.com/vis3-plot7.png)
 
 I tried to combine the last 2 `layer_text()` functions together (the chunk below) and add a "%" to the end of the percentage point but it returns `undefined` at the position which is supposed to be like `Beijing 14.78%`. Need to figure out why the function does not support multiple embedding.
 
-```{r, eval = F}
+``` r
 layer_text(data = cap_bar, x = ~cap_long -.5, y = ~cap_lat - 1,
            text := ~paste(prov_en, ": ", round(growth_10y * 100, 2),
                           "%", sep = ""),
            fill := "black", align := "center")
-````
+```
 
 -----------
 

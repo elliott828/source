@@ -1,4 +1,4 @@
-title: R Visualization Series - China Map Part II
+title: R Visual. - China Map Part II
 date: 2015-10-15 23:34:30
 categories: Codage
 tags: [R, visualization, ggvis, ggplot2]
