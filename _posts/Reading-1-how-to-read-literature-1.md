@@ -4,7 +4,9 @@ categories: Livres & filmes
 tags: [Reading, 教你读懂文学的27堂课]
 ---
 
-[《教你读懂文学的27堂客》](http://book.douban.com/subject/6877623/)读书笔记 - 第1课 __每趟旅程都是追寻__ 
+[《教你读懂文学的27堂课》](http://book.douban.com/subject/6877623/)读书笔记
+
+- **第1课 《每趟旅程都是追寻》**
 
 所有“追寻”题材的故事都可以归纳然后具现为骑士故事。
 <!-- more -->
@@ -43,7 +45,7 @@ tags: [Reading, 教你读懂文学的27堂课]
 
 -------------------
 
-**文中提到douban可查书籍**
+**文中提到的douban可查书籍**
 
 * [《拍卖第四十九批》](http://book.douban.com/subject/25802065/)
 * [《高文爵士与绿衣骑士》](http://book.douban.com/subject/4312756/)

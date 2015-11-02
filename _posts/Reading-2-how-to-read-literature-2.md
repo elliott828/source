@@ -1,13 +1,13 @@
-title: 座上宾和俎上肉
+title: 读书笔记：座上宾和俎上肉
 date: 2015-11-01 12:57:23
 categories: Livres & filmes
 tags: [Reading, 教你读懂文学的27堂课]
 ---
 
-[《教你读懂文学的27堂客》](http://book.douban.com/subject/6877623/)读书笔记 - 
+[《教你读懂文学的27堂课》](http://book.douban.com/subject/6877623/)读书笔记 
 
-- **第2课: 《你是我的座上宾：有关圣餐礼的二三事》**  
-- **第3课: 《你是我的俎上肉：有关吸血鬼的二三事》**
+- **第2课 《你是我的座上宾：有关圣餐礼的二三事》**  
+- **第3课 《你是我的俎上肉：有关吸血鬼的二三事》**
 
 <!-- more -->
 
@@ -94,7 +94,7 @@ tags: [Reading, 教你读懂文学的27堂课]
 * 罗伯特·路易斯·史蒂文森(Robert Louis Stevenson) - [《化身博士》](http://book.douban.com/subject/3527785/)
 * 乔瑟夫·雪利登·拉·芬努(Joseph Thomas Sheridan Le Fanu) - [《女吸血鬼·卡米拉》](http://book.douban.com/subject/4009445/)
 * 亨利·詹姆斯(Henry James) - [《螺丝在拧紧》](http://book.douban.com/subject/1023647/), [《黛西·米勒》](http://book.douban.com/subject/6848467/)
-* 托马斯·哈代() - [《黛丝姑娘》]()
+* 托马斯·哈代(Thomas Hardy) - [《德伯家的苔丝》](http://book.douban.com/subject/1083473/)
 * 弗兰兹·卡夫卡(Franz Kafka) - [《变形记》](http://book.douban.com/subject/1213546/), [《饥饿艺术家》](http://book.douban.com/subject/3215997/)
 * 加夫列尔·加西亚·马尔克斯(Gabriel José de la Concordia García Márquez) - [《难以置信的悲惨故事—纯真的埃伦蒂拉和残忍的祖母》](http://book.douban.com/subject/2977889/)
 * 戴维·赫伯特·劳伦斯(David Herbert Lawrence) - [《狐》](http://book.douban.com/subject/1264288/), [《恋爱中的女人》](http://book.douban.com/subject/1159935/)
