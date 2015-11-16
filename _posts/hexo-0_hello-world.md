@@ -1,6 +1,6 @@
 title: Hello World
 date: 2015-09-03 15:20:41
-categories: Hexo
+categories: Hexo|博客技术
 tags: [blog, Hexo, git]
 ---
 Keep this automatically generated article for memory. About 1 week before my baby's due date.

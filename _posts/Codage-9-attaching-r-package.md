@@ -1,6 +1,6 @@
 title: "Things to Know about Loading R Packages"
 date: 2015-10-09 21:58:09
-categories: Codage
+categories: Codage|编程
 tags: [R, library, require]
 ---
 

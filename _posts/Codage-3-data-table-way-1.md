@@ -1,6 +1,6 @@
 title: data.table Way - Learning Note Part 1
 date: 2015-09-23 21:05:42
-categories: Codage
+categories: Codage|编程
 tags: [R, data.table]
 ---
 This is a learning note for the course [Data Analysis in R, the data.table Way](https://www.datacamp.com/courses/data-table-data-manipulation-r-tutorial).

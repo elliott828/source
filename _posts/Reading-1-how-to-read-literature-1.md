@@ -1,7 +1,7 @@
-title: 读书笔记：每趟旅程都是追寻
+title: 每趟旅程都是追寻
 date: 2015-10-31 14:11:11
-categories: Livres & filmes
-tags: [Reading, 教你读懂文学的27堂课]
+categories: Livres & filmes|读书与映画
+tags: [Reading, 读书笔记, 教你读懂文学的27堂课]
 ---
 
 [《教你读懂文学的27堂课》](http://book.douban.com/subject/6877623/)读书笔记

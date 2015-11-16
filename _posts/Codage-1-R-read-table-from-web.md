@@ -1,6 +1,6 @@
 title: Scraping Data Table from Website by R
 date: 2015-09-08 22:11:37
-categories: Codage
+categories: Codage|编程
 tags: [R, dplyr, RMySQL, XML, quantmod]
 ---
 

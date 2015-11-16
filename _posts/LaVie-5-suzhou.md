@@ -1,6 +1,6 @@
 title: 日行苏州
 date: 2015-10-11 18:57:28
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [生活, 苏州, 游走]
 ---
 

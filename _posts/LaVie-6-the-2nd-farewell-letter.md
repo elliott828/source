@@ -1,6 +1,6 @@
 title: To Say Goodbye Is to...
 date: 2015-10-23 19:44:22
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [生活]
 ---
 

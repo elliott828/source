@@ -1,6 +1,6 @@
 title: R Package ggvis Flashback
 date: 2015-10-07 20:56:41
-categories: Codage
+categories: Codage|编程
 tags: [R, ggvis, visualization, dplyr, ggplot2]
 ---
 

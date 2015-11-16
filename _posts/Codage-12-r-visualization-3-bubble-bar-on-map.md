@@ -1,6 +1,6 @@
 title: R Visual. - Bubbles and Bar Charts on China Map
 date: 2015-10-18 23:24:12
-categories: Codage
+categories: Codage|编程
 tags: [R, visualization, ggvis, ggplot2]
 ---
 

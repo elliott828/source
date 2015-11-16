@@ -1,6 +1,6 @@
 title: Hello World
 date: 2015-09-20 21:54:34
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [生活, 家庭]
 ---
 迷你猪降临到这个混乱的世界已经整整一个星期了，白驹就这么过了个隙。

@@ -1,6 +1,6 @@
 title: New Life
 date: 2015-09-13 09:21:59
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [时间, 生活, 家庭]
 ---
 

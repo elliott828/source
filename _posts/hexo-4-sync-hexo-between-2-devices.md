@@ -1,6 +1,6 @@
 title: 两台设备中同步Hexo博客
 date: 2015-10-04 19:41:21
-categories: Hexo
+categories: Hexo|博客技术
 tags: [Hexo, blog, git, github, Ubuntu, sync]
 ---
 现在时不时会在Ubuntu系统中编辑文档，将这个系统中的.md编辑完在发回WIN7系统deploy到hexo是一个很烦的过程，尤其是这事儿以后会经常发生的时候。
@@ -64,6 +64,7 @@ $ node --version
 
 ******
 *编辑于10/5/2015*
+
 重启电脑以后输入`hexo generate`发现hexo命令无法调用，多方查询，说有可能是nodejs的问题
 ``` bash
 $ nvm ls
@@ -82,6 +83,16 @@ $ node --version
 v0.10.40
 ```
 这次才是真的成功了。。。
+
+******
+*编辑于11/6/2015*
+
+圈子里大牛们讨论上面的问题时，说到了nodejs的发展历史。
+搜索条目里去年处理这个问题的解决方案之一就是用nvm安装0.10.xx版本的nodejs
+今年官网上就已经推出5.0的版本了
+版本演进之快，令人乍舌，不过hexo命令之所以无法使用，极有可能就是因为nodejs在发展过程中将底层调用命令(不是IT，不知道这样表述是否精确)从node变成了nodejs，而hexo仍然使用node去执行命令，并没有考虑nodejs版本上的巨大变化。
+上面的解决方案是目前比较靠谱的方法。
+期望有一天这个问题可以解决，让hexo可以使用更高级的nodejs。
 
 ******
 

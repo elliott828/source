@@ -1,6 +1,6 @@
 title: 搭建Hexo博客
 date: 2015-09-03 16:29:49
-categories: Hexo
+categories: Hexo|博客技术
 tags: [blog, Hexo, git]
 ---
 这是我这个代码菜鸟第一次自己搭建一个博客，感谢[Hexo](https://hexo.io/)的设计者[Tommy Chen](http://zespia.tw/)给我一个自high的机会。=3=

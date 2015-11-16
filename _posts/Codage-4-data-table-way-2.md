@@ -1,6 +1,6 @@
 title: data.table Way - Learning Note Part 2
 date: 2015-09-25 20:41:04
-categories: Codage
+categories: Codage|编程
 tags: [R, data.table]
 ---
 

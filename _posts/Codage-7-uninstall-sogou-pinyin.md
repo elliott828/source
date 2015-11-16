@@ -1,6 +1,6 @@
 title: Ubuntu 14.04 卸载搜狗拼音输入法及后续问题解决
 date: 2015-10-02 14:00:08
-categories: Codage
+categories: Codage|编程
 tags: [Ubuntu, sogoupinyin, Linux]
 ---
 

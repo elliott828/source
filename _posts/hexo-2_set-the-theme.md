@@ -1,6 +1,6 @@
 title: Hexo博客优化
 date: 2015-09-03 22:55:10
-categories: Hexo
+categories: Hexo|博客技术
 tags: [Hexo, blog, git]
 ---
 现在这个博客基本处于裸奔状态，除了默认的Landscape模板和仅有的两三篇文章以外，其它设置几乎是空白。对于处女座而言简直不能忍。

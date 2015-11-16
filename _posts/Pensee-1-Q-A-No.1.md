@@ -1,6 +1,6 @@
 title: 随想录1 - 人类智慧 vs. 人工智能
 date: 2015-09-07 21:49:24
-categories: Pauvreté de pensée
+categories: Pauvreté de pensée|随想集
 tags: [Q&A, 人工智能]
 ---
 

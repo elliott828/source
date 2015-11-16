@@ -1,6 +1,6 @@
 title: Hexo博客优化 Part II
 date: 2015-10-02 22:34:40
-categories: Hexo
+categories: Hexo|博客技术
 tags: [Hexo, blog, git]
 ---
 

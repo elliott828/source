@@ -1,6 +1,6 @@
 title: 树影之下，已过20年
 date: 2015-09-06 23:45:01
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [时间, 生活]
 ---
 

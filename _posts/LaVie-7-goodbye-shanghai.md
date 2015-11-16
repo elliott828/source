@@ -1,6 +1,6 @@
 title: 沙扬娜拉
 date: 2015-10-30 22:06:43
-categories: La vie est ailleurs
+categories: La vie est ailleurs|生活在别处
 tags: [生活, 上海]
 ---
 
@@ -30,7 +30,7 @@ tags: [生活, 上海]
 
 临近上半场结束的时候，朴树唱起了《我爱你，再见》
 <!-- HTML -->
-<blockquote class="blockquote-center"><i>为什么啊
+<blockquote class="blockquote-center"><b>为什么啊
 就这样地离开
 为什么就不能相爱
 一直到我们死去啊
@@ -39,7 +39,7 @@ tags: [生活, 上海]
 我流着泪的恋人啊
 时光已将一切更改
 当我慢慢忘记你的脸
-</i></blockquote>
+</b></blockquote>
 
 听到这段副歌的时候我意外地没能止住眼泪的奔涌。
 这是爱情。
@@ -72,4 +72,4 @@ tags: [生活, 上海]
 海鲜，螃蟹，饺子，热干面，烧烤，烤鱼，各种酒。
 你知道，这一个月我竟然没胖多少。
 生命中头一次觉得红酒真的好喝。
-甜，酸，涩。这是生命的滋味。
+甜，酸，涩。这是命的滋味。

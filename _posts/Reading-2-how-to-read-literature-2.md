@@ -1,7 +1,7 @@
-title: 读书笔记：座上宾和俎上肉
+title: 座上宾和俎上肉
 date: 2015-11-01 12:57:23
-categories: Livres & filmes
-tags: [Reading, 教你读懂文学的27堂课]
+categories: Livres & filmes|读书与映画
+tags: [Reading, 读书笔记, 教你读懂文学的27堂课]
 ---
 
 [《教你读懂文学的27堂课》](http://book.douban.com/subject/6877623/)读书笔记 

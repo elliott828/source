@@ -1,6 +1,6 @@
 title: Install R and RStudio on Ubuntu
 date: 2015-09-20 19:18:43
-categories: Codage
+categories: Codage|编程
 tags: [Ubuntu, R, Linux]
 ---
 I wanted to try Linux system thus I formatted an old laptop bought 7 years ago (HP Pavilion dm3, French keyboard).

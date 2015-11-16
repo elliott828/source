@@ -1,6 +1,6 @@
 title: 随想录2 - 时间旅行 vs. 平行宇宙
 date: 2015-10-25 08:58:48
-categories: Pauvreté de pensée
+categories: Pauvreté de pensée|随想集
 tags: [Q&A, 时间旅行, 平行宇宙]
 ---
 

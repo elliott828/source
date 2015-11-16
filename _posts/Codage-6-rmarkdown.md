@@ -1,6 +1,6 @@
 title: R Markdown Review
 date: 2015-10-01 23:38:08
-categories: Codage
+categories: Codage|编程
 tags: [R, rmarkdown, knitr, markdown]
 ---
 

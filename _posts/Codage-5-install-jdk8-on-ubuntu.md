@@ -1,6 +1,6 @@
 title: Install jdk8 on Ubuntu 14.04
 date: 2015-09-24 21:39:03
-categories: Codage
+categories: Codage|编程
 tags: [Ubuntu, jdk, Linux, vi, vim]
 ---
 JDK is an important tool which consists the base of Java programming as well as supports many other programming IDEs.
