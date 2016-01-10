@@ -67,6 +67,7 @@ system.time(readWorksheet(wb, sheet = "demo", header = T))
 补充于 12/7/2015:
 此函数无法自动将excel中的公式转换为数值。
 如果一个excel文件中含有公式，则会报错。
+
 -----------------
 
 ## `gdata`包

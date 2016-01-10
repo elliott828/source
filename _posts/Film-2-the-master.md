@@ -1,7 +1,7 @@
 title: 是谁向死而生
 date: 2015-12-14 22:51:04
 categories: Livres & filmes|读书与映画
-tags: [电影, 徐皓峰, 武侠]
+tags: [Film, 徐皓峰, 武侠, 师父]
 ---
 
 故事里的人物，没有一个是至善的。

@@ -1,7 +1,7 @@
 title: 生来孤独
 date: 2015-12-10 22:53:28
 categories: Livres & filmes|读书与映画
-tags: [火星救援, 科幻, Matt Damon, 电影]
+tags: [火星救援, 科幻, Matt Damon, Film]
 ---
 
 《火星救援》的一些场景，不如《星际穿越》那样宏大，却将孤独感深深地植入骨髓。
