@@ -9,7 +9,7 @@ Establishing this blog
 is to celebrate my baby’s arriving in this world
 
 To remember  
-To Learn
+To learn
 To think  
 
 **THE FUTURE NEVER ENDS**

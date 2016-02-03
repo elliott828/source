@@ -1,4 +1,8 @@
-法语语法碎片补全(一)
+title: 法语语法碎片补全(一)
+date: 2016-2-2 18:41:31
+categories: Langage|巧舌如簧
+tags: [Français, 语法]
+---
 
 用[duolingo](http://www.duolingo.cn/)复习法语时，碰到一些已经印象不深的语法点，整理记录一下。
 
@@ -37,16 +41,19 @@ cher    | 亲爱的        | 贵重的   | un cher ami / une montre chère
 	* La grande robe rouge.
 	* Une jeune fille française.
 
+
 * 两个形容词出现在同一侧，可用*et*来拆散他们(不能让它们刺激单身形容词)。
 
 	* J'ai un chapeau blanc et bleu.
 	* L'homme fort et sérieux
+
 
 * 当一个形容词修饰多个名词时，该形容词默认变为阳性复数形式。若名词均为阴性，则形容词为阴性复数形式。
 	
 	* Un garçon et une fille italiens.
 	* J'ai une chemise et un manteau simples.
 	* La robe et la jupe vertes
+
 
 ## 从属连词(Subordinating Conjunctions)
 复杂句式中，一句可能附属于另一句。如：
@@ -61,17 +68,14 @@ cher    | 亲爱的        | 贵重的   | un cher ami / une montre chère
 
 ### 时间连词
 
-* *quand* 及 *lorsque*均可理解为when，用于表示时间关系。后者只适用于单一场景，前者可用于多重场景。
-如何理解“单一”和“多重”呢？
+* *quand* 及 *lorsque*均可理解为when，用于表示时间关系。后者只适用于单一场景，前者可用于多重场景。如何理解“单一”和“多重”呢？
+	第二个例句中的*quand*可理解为whenever，即任何时候，我饿了，我就会吃。(所以我胖了。。。)
+	这种表达里，*quand*不可用*lorsque*来替换。*quand*也是副词，所以可以用于疑问句。
 
 	* Je sortais *quand*/*lorsque* tu arrivais.
-	* Je mange *quand* j'ai faim.
+	* Je mange *quand* j'ai faim
+	* *Quand* mangez-vous?
 
-	第二个例句中的*quand*可理解为whenever，即任何时候，我饿了，我就会吃。(所以我胖了。。。)
-	这种表达力，*quand*不可用*lorsque*来替换。
-
-	*quand*也是副词，所以可以用于疑问句。
-	* Quand mangez-vous?
 
 * *alors que*, *tandis que* 和 *pendant que* 均表示同时发生(while)。前两者还可以表示对比和矛盾(但tandis que较少用)。
 
@@ -88,9 +92,11 @@ cher    | 亲爱的        | 贵重的   | un cher ami / une montre chère
 	* Elle lit parce qu'elle a un livre.
 	* Parce qu'elle est jeune, elle est jolie. 
 
+
 * *car* 类似于前者，但是是并列连词所以不能放在句首。
 
 	* Je mange du poulet, car j'aime la viande.
+
 
 * *puisque* 同样是从属连词，类似于"because"或者"since"，提供一个众所周知的或者非常明显的原因或判断。
 
