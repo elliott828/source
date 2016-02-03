@@ -11,7 +11,7 @@ tags: [Français, 语法]
 
 <!-- more -->
 
-## 形容词
+## 形容词(Adjectives)
 ### 形容词的位置
 法语中形容词大多放在名词后，少数例子除外，可将例外记作**BANGS**
 
@@ -66,7 +66,7 @@ cher    | 亲爱的        | 贵重的   | un cher ami / une montre chère
 * *Lorsque* le garçon mange, la fille mange. Lorsque可理解为when
 * *Pendant que* je lis, il écrit. Pendant que理解为while
 
-### 时间连词
+### 时间连词(Temporal Conjunctions)
 
 * *quand* 及 *lorsque*均可理解为when，用于表示时间关系。后者只适用于单一场景，前者可用于多重场景。如何理解“单一”和“多重”呢？
 	第二个例句中的*quand*可理解为whenever，即任何时候，我饿了，我就会吃。(所以我胖了。。。)

@@ -32,7 +32,7 @@ tags: [Français, 语法]
 * la soupe de poulet — chicken soup
 * le hockey sur gazon — field hockey
 
-## 限定词
+## 限定词(Determiners)
 
 几乎所有的名词都需要有一个限定词放在前面。
 限定词的种类：
