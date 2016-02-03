@@ -100,4 +100,4 @@ cher    | 亲爱的        | 贵重的   | un cher ami / une montre chère
 
 * *puisque* 同样是从属连词，类似于"because"或者"since"，提供一个众所周知的或者非常明显的原因或判断。
 
-	* Puisque il pleut, j'ai un parapluie.
+	* Puisqu'il pleut, j'ai un parapluie.
