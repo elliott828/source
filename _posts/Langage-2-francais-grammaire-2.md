@@ -27,3 +27,33 @@
 * la soupe de poulet — chicken soup
 * le hockey sur gazon — field hockey
 
+## 限定词
+
+几乎所有的名词都需要有一个限定词放在前面。
+限定词的种类：
+
+中文定义     | 英文名                   | 例
+-------------|--------------------------|----
+定冠词       | Articles                 | **le** pantalon
+所有格形容词 | Possessive adjectives    | **ton** cochon
+基数词       | Cardinal numbers         | **deux** chevaus
+疑问形容词   | Interrogative adjectives | **quel** chat
+感叹形容词   | Exclamation adjectives   | **quelle** chance
+否定形容词   | Negative adjectives      | **aucune** chance
+不定式形容词 | Indefinite adjectives    | **plusieurs** jouets
+
+其中不定式形容词(如plusieurs, certains, quelques和chaque)的用法同不定冠词。
+有极少数例外不适用于以上的规则。当表达一个职业、信仰，描述一个状态(与être连用)，带出一种语言(与parler连用)以及与devenir连用时，名词前通常不加限定词。如：
+
+* Je suis médecin.
+* Il est bon élève.
+* Elle est victime de son succès.
+* Paul était témoin à mon mariage.
+* Je parle anglais. 
+* Il devient roi du Nord.
+
+在部分介词后，也需要删去限定词：
+
+* Je ne peux pas vivre **sans** eau.
+* Nous le transportons **par** avion.
+* C'est une feuille **de** papier. 
