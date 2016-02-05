@@ -1,4 +1,4 @@
-title: 法语语法碎片补全(二)
+title: 法语语法拾遗(二)
 date: 2016-2-3 21:41:31
 categories: Langage|巧舌如簧
 tags: [Français, 语法]
