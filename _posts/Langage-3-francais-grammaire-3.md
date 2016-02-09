@@ -63,43 +63,31 @@ dans, en和à都可以译作in。但是应该如何区分呢？
 	- On vit à la campagne.
 	- C'est dangereux à la frontière.
 
+
 * en 用于不需要限定词的地点，通常是一种类型的地点。
 
 	- Nous sommes en classes.
 	- Elle est en prison.
 
+
 * 特殊规则：
 
 	* 对于所有的**城市**和**岛**，用à表示to或in，用de表示from。
-
 		- Le roi vit à Versailles. — The king lives in Versailles.
 		- Nous allons à Paris. — We are going to Paris.
 		- Napoléon vient de Corse. — Napoleon comes from Corsica.
 		- Je l'envoie d'Orléans. — I am sending it from Orleans.
-
-
 	* **国家、省/州以及大陆**有基于名词阴阳性的特殊规则。
-
 		* 对于阴性名词，用en表示to或者in，de表示from。所有的表示大陆的名词都是阴性名词，大多数以e结尾的国家亦是如此。
-
 			- Bordeaux est en France. — Bordeaux is in France.
 			- Il reste en Europe. — He is staying in Europe.
 			- On vient de Californie. — We come from California.
 			- Elle part d'Asie. — She is departing from Asia.
-
-
 		* 对于以辅音开头的阳性名词，用au表示to或in，用du表示from
-
 			- Je veux aller au Québec. — I want to go to Quebec.
 			- Elles partent du Japon. — They are departing from Japan.
-
-
 		* 对于以元音开头的阳性名词，用en表示to或in，用de表示from
-
 			- Il y a une guerre en Irak. — There is a war in Iraq.
 			- J'arrive d'Ontario. — I am coming from Ontario.
-
-
 		* 对于复数形式的名词(主要是USA)，用aux表示to或in，用des表示from
-
 			- On travaille aux États-Unis. — We work in the United States.
