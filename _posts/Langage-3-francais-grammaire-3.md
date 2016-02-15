@@ -16,19 +16,19 @@ tags: [Français, 语法]
 ## 国家、国籍、语言
 
 * 表示**国家、国籍的名词**，首字母大写。
-
+	
 	- C'est une Anglaise.
 	- Ce sont des Françaises.
 
 
 * 表示**国家的形容词**和表示**语言的名词**，首字母不用大写。
-
+	
 	- C'est une voiture anglaise.
 	- Elles parlent français.
 
 
 * 表示国籍(还有职业和信仰)的名词在 être 后可以省略限定词。这种用法下，这些名词的用法**类似于形容词**， 首字母不大写。
-
+	
 	- Je suis chinois
 	- Mon oncle est italien
 
@@ -59,13 +59,13 @@ dans, en和à都可以译作in。但是应该如何区分呢？
 
 
 * à 用于不指定的、模糊的地点。
-
+	
 	- On vit à la campagne.
 	- C'est dangereux à la frontière.
 
 
 * en 用于不需要限定词的地点，通常是一种类型的地点。
-
+	
 	- Nous sommes en classes.
 	- Elle est en prison.
 

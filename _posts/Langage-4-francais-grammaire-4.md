@@ -40,7 +40,7 @@ tags: [Français, 语法]
 
 注意英语中的was和were是to be的过去时，当他们放在其它动词前表连续性的过去时态时，他们是助动词。
 
-## 习惯或重复性动作
+### 习惯或重复性动作
 
 * Nous nous entraînions chaque semaine. - We used to train every week.
 * Il récitait des poèmes. — He would (or) used to recite poems.
@@ -60,7 +60,7 @@ tags: [Français, 语法]
 **N**aître 	  | mourir |
 **T**omber    |        | 
 
-ADVENT范畴外，还有retourner和passer等。
+ADVENT范畴外，还有rester, retourner和passer等。
 
 要注意，这些词中，有些既可以做及物动词又可以做不及物动词。
 monter, descendre, sortir, rentrer, retourner以及 passer.
