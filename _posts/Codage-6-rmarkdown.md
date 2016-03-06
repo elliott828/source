@@ -59,7 +59,7 @@ For instance, `{r message = FALSE}` means all messages generated in the chunk is
 |-----------------|--------------|-----------------|----------------|
 | `echo=FALSE`    | X            | O               | O              |
 | `eval=FALSE`    | O            | X               | X              |
-| `result='hide'` | O            | O               | X              |
+| `results='hide'`| O            | O               | X              |
 
 ### Reference Label
 
