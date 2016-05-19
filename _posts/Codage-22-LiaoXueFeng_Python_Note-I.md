@@ -2,7 +2,7 @@ NOTES
 
 ## 基本数据类型相关
 ### tuple的不可修改性
-list可修改而tuple不可修改。tuple不可修改针对的是内存的指向，如：
+list可修改而tuple不可修改(tuple也是一种list)。tuple不可修改针对的是内存的指向，如：
 ``` python
 L = ("a", "b", ["c", "d"])
 ```
@@ -162,4 +162,300 @@ def fact_iter(num, product):
     return fact_iter(num - 1, num * product)
 ```
 
-# http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431756044276a15558a759ec43de8e30eb0ed169fb11000
+两种递归的计算步骤对比是：
+递归：
+``` python
+===> fact(5)
+===> 5 * fact(4)
+===> 5 * (4 * fact(3))
+===> 5 * (4 * (3 * fact(2)))
+===> 5 * (4 * (3 * (2 * fact(1))))
+===> 5 * (4 * (3 * (2 * 1)))
+===> 5 * (4 * (3 * 2))
+===> 5 * (4 * 6)
+===> 5 * 24
+===> 120
+```
+尾递归优化：
+``` python
+===> fact_iter(5, 1)
+===> fact_iter(4, 5)
+===> fact_iter(3, 20)
+===> fact_iter(2, 60)
+===> fact_iter(1, 120)
+===> 120
+```
+> 尾递归调用时，如果做了优化，栈不会增长，因此，无论多少次调用也不会导致栈溢出。
+> 遗憾的是，大多数编程语言没有针对尾递归做优化，Python解释器也没有做优化，所以，即使把上面的fact(n)函数改成尾递归方式，也会导致栈溢出。
+
+## 高级特性
+### 切片(Slicing)
+在一个可提取子集的对象后用`[:]`切片。
+如果加入第二个`:`如`[::]`，则第二个`:`表示切片的步长。
+如:
+``` python
+L = list(range(100))
+L[:10:2]
+```
+
+    ### [0, 2, 4, 6, 8]
+
+``` python
+L[::5]
+```
+
+    ### [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
+
+### 迭代(Iteration)
+判断一个对象是否可以迭代：通过collections模块中的Iterable：
+``` python
+from collections import Iterable
+isinstance('abc', Iterable)    # True
+isinstance([1,2,3], Iterable)  # True
+isinstance(123, Iterable)      # False
+```
+
+enumerate可以吧一个list变成*索引-元素对*。
+``` python
+for i, value in enumerate(['A', 'B', 'C']):
+    print(i, value)
+```
+
+    ### 0 A
+    ### 1 B
+    ### 2 C
+
+### 列表生成器(List Comprehensions)
+用于简化列表生成的python内置功能。
+生成一个`[1, 4, 9, ..., 100]`的llist，常规方法是循环生成：
+``` python
+for x in range(1, 11):
+    L.append(x * x)
+```
+列表生成式提供了一种用一行既可以替代循环生成list的方式：
+``` python
+[x * x for x in range(1, 11)]
+```
+这种生成方式可以与SQL语句对比(假设`range(1,11)`在数据库中为表`temp`，该表只有一个field：x)：
+``` SQL
+SELECT x * x FROM temp
+```
+
+`for`循环后面可以加上`if`判断，筛选出偶数的平方：
+``` python
+[x * x for x in range(1, 11) if x % 2 == 0]
+```
+对比SQL：
+``` SQL
+SELECT x * x FROM temp WHERE x % 2 = 0
+```
+
+列表生成器也可以使用多层循环(一般最多两层)：
+``` python
+[m + n for m in 'ABC' for n in 'XYZ']
+```
+
+### 生成器(Generator)
+列表生成器的局限是无法生成一个过长的list，因为太长的list会占用太大的内存以至于无法实现这类list的创建。如果只需要对这种列表的前几个元素进行计算，那么后面的元素所占用的空间就被浪费了
+生成器与列表生成器的区别就在于，每一个元素可以在循环中创建，而不用创建完整的list。元素的创建都依靠算法，一次只占用一个单位的内存空间。
+生成器最直接的创建方式是讲列表生成式的`[]`替换为`()`
+``` python
+L = [x * x for x in range(10)]
+L
+```
+
+    ### [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+``` python
+g = (x * x for x in range(10))
+g
+```
+
+    ### <generator object <genexpr> at 0x1022ef630>
+
+想要看到`g`(刚刚创建的生成器)的内容，有两种方式，可以通过`next(g)`来查看下一个返回值，直到返回`StopIteration`的错误信息。
+``` python
+next(g)
+```
+
+    ### 0
+
+``` python
+next(g)
+```
+
+    ### 1
+
+``` python
+next(g)
+```
+
+    ### 4
+
+``` python
+next(g)
+```
+
+    ### 9
+
+``` python
+next(g)
+```
+
+    ### 16
+
+``` python
+next(g)
+```
+
+    ### 25
+
+``` python
+next(g)
+```
+
+    ### 36
+
+``` python
+next(g)
+```
+
+    ### 49
+
+``` python
+next(g)
+```
+
+    ### 64
+
+``` python
+next(g)
+```
+
+    ### 81
+
+``` python
+next(g)
+```
+
+    ### Traceback (most recent call last):
+    ###     File "<stdin>", line 1, in <module>
+    ### StopIteration
+
+或者使用`for`循环：
+
+``` python
+for n in g:
+    print(n)
+```
+
+    ### 0
+    ### 1
+    ### 4
+    ### 9
+    ### 16
+    ### 25
+    ### 36
+    ### 49
+    ### 64
+    ### 81
+
+回到generator的创建上，另一种方法是在函数中使用`yield`。以一个能生成斐波那契数列的函数为例：
+``` python
+def fib1(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        print(b)
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+```
+而generator只需要更改其中的一个语句：
+``` python
+def fib2(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+```
+来看看效果：
+```python
+fib1(6)
+```
+
+    ### 1
+    ### 1
+    ### 2
+    ### 3
+    ### 5
+    ### 8
+    ### 'done'
+
+``` python
+f = fib(6)
+f
+```
+
+    ### <generator object fib at 0x104feaaa0>
+
+``` python
+next(f)
+```
+
+    ### 1
+
+``` python
+next(f)
+```
+
+    ### 1
+
+``` python
+next(f)
+```
+
+    ### 2
+
+``` python
+next(f)
+```
+
+    ### 3
+
+两个例子对比可以看出：
+
+* 函数里`return`是一个触发器，遇到`return`的时候，程序返回结果
+* 生成器里，`yield`是一个触发器。每次调用next()就执行一次生成器，遇到`yield`就返回结果，再次执行时，从上次返回的`yield`的地方继续执行
+
+当然用`next()`来获取返回值比较不效率，一般可以直接使用`for`循环来迭代：
+
+``` python
+for n in f:
+    print(n)
+```
+
+    ### 1
+    ### 1
+    ### 2
+    ### 3
+    ### 5
+    ### 8
+
+### 迭代器
+
+> 可以被next()函数调用并不断返回下一个值的对象称为迭代器：`Iterator`。
+> 可以使用`isinstance()`判断一个对象是否是`Iterator`对象
+
+``` python
+from collections import Iterator
+isinstance((x for x in range(10)), Iterator)  # True
+isinstance([], Iterator)                      # False
+isinstance({}, Iterator)                      # False
+isinstance('abc', Iterator)                   # False
+```
+
+> 为什么list、dict、str等数据类型不是Iterator？
+> 这是因为Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。可以把这个数据流看做是一个有序序列，但我们却不能提前知道序列的长度，只能不断通过next()函数实现按需计算下一个数据，所以Iterator的计算是惰性的，只有在需要返回下一个数据时它才会计算。
+> Iterator甚至可以表示一个无限大的数据流，例如全体自然数。而使用list是永远不可能存储全体自然数的。
