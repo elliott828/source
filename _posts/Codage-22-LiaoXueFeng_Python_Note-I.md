@@ -1,4 +1,13 @@
-NOTES
+title: 廖雪峰python教程学习笔记
+date: 2016-05-18 16:00:28
+categories: Codage|编程
+tags: [Python, 廖雪峰]
+---
+
+针对不熟悉的知识点，按照原教程框架和顺序进行记录。
+廖兄的教程大致分为三个大的部分：基础对象介绍、python编程方式及后续开发知识点。
+这一篇是第一部分的知识点拾遗。
+<!-- more -->
 
 ## 基本数据类型相关
 ### tuple的不可修改性
@@ -136,17 +145,17 @@ def fact(n):
 
 print(fact(1))
 ```
-    ### 1
+    ## 1
 
 ``` python
 print(fact(5))
 ```
-    ### 120
+    ## 120
 
 ``` python
 print(fact(10))
 ```
-    ### 3628800
+    ## 3628800
 
 然而当我们尝试`fact(1000)`的时候，函数会报错。于是有了这一小节开头的那一句话。解决方案是使用**尾递归优化**。
 
@@ -198,13 +207,13 @@ L = list(range(100))
 L[:10:2]
 ```
 
-    ### [0, 2, 4, 6, 8]
+    ## [0, 2, 4, 6, 8]
 
 ``` python
 L[::5]
 ```
 
-    ### [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
+    ## [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
 
 ### 迭代(Iteration)
 判断一个对象是否可以迭代：通过collections模块中的Iterable：
@@ -221,9 +230,9 @@ for i, value in enumerate(['A', 'B', 'C']):
     print(i, value)
 ```
 
-    ### 0 A
-    ### 1 B
-    ### 2 C
+    ## 0 A
+    ## 1 B
+    ## 2 C
 
 ### 列表生成器(List Comprehensions)
 用于简化列表生成的python内置功能。
@@ -264,83 +273,83 @@ L = [x * x for x in range(10)]
 L
 ```
 
-    ### [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    ## [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 ``` python
 g = (x * x for x in range(10))
 g
 ```
 
-    ### <generator object <genexpr> at 0x1022ef630>
+    ## <generator object <genexpr> at 0x1022ef630>
 
 想要看到`g`(刚刚创建的生成器)的内容，有两种方式，可以通过`next(g)`来查看下一个返回值，直到返回`StopIteration`的错误信息。
 ``` python
 next(g)
 ```
 
-    ### 0
+    ## 0
 
 ``` python
 next(g)
 ```
 
-    ### 1
+    ## 1
 
 ``` python
 next(g)
 ```
 
-    ### 4
+    ## 4
 
 ``` python
 next(g)
 ```
 
-    ### 9
+    ## 9
 
 ``` python
 next(g)
 ```
 
-    ### 16
+    ## 16
 
 ``` python
 next(g)
 ```
 
-    ### 25
+    ## 25
 
 ``` python
 next(g)
 ```
 
-    ### 36
+    ## 36
 
 ``` python
 next(g)
 ```
 
-    ### 49
+    ## 49
 
 ``` python
 next(g)
 ```
 
-    ### 64
+    ## 64
 
 ``` python
 next(g)
 ```
 
-    ### 81
+    ## 81
 
 ``` python
 next(g)
 ```
 
-    ### Traceback (most recent call last):
-    ###     File "<stdin>", line 1, in <module>
-    ### StopIteration
+    ## Traceback (most recent call last):
+    ##     File "<stdin>", line 1, in <module>
+    ## StopIteration
 
 或者使用`for`循环：
 
@@ -349,16 +358,16 @@ for n in g:
     print(n)
 ```
 
-    ### 0
-    ### 1
-    ### 4
-    ### 9
-    ### 16
-    ### 25
-    ### 36
-    ### 49
-    ### 64
-    ### 81
+    ## 0
+    ## 1
+    ## 4
+    ## 9
+    ## 16
+    ## 25
+    ## 36
+    ## 49
+    ## 64
+    ## 81
 
 回到generator的创建上，另一种方法是在函数中使用`yield`。以一个能生成斐波那契数列的函数为例：
 ``` python
@@ -385,44 +394,44 @@ def fib2(max):
 fib1(6)
 ```
 
-    ### 1
-    ### 1
-    ### 2
-    ### 3
-    ### 5
-    ### 8
-    ### 'done'
+    ## 1
+    ## 1
+    ## 2
+    ## 3
+    ## 5
+    ## 8
+    ## 'done'
 
 ``` python
 f = fib(6)
 f
 ```
 
-    ### <generator object fib at 0x104feaaa0>
+    ## <generator object fib at 0x104feaaa0>
 
 ``` python
 next(f)
 ```
 
-    ### 1
+    ## 1
 
 ``` python
 next(f)
 ```
 
-    ### 1
+    ## 1
 
 ``` python
 next(f)
 ```
 
-    ### 2
+    ## 2
 
 ``` python
 next(f)
 ```
 
-    ### 3
+    ## 3
 
 两个例子对比可以看出：
 
@@ -436,12 +445,12 @@ for n in f:
     print(n)
 ```
 
-    ### 1
-    ### 1
-    ### 2
-    ### 3
-    ### 5
-    ### 8
+    ## 1
+    ## 1
+    ## 2
+    ## 3
+    ## 5
+    ## 8
 
 ### 迭代器
 
