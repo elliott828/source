@@ -452,7 +452,7 @@ for n in f:
     ## 5
     ## 8
 
-### 迭代器
+### 迭代器(Iterator)
 
 > 可以被next()函数调用并不断返回下一个值的对象称为迭代器：`Iterator`。
 > 可以使用`isinstance()`判断一个对象是否是`Iterator`对象
