@@ -75,12 +75,19 @@ print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
 # -*- coding: utf-8 -*-
 from functools import reduce
 def str2float(s):
-    
-
+    def str2int(s):
+        return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
+    def str2num(x, y):
+        return 10 * x + y
+    a, b = s.split('.')        
+    return (reduce(str2num, map(str2int, a)) + reduce(str2num, map(str2int, b)) * 10 ** -len(b))
 
 print('str2float(\'123.456\') =', str2float('123.456'))
 ```
 
+    ## str2float('123.456') = 123.456
+
+官方解决方案[点此](https://github.com/michaelliao/learn-python3/blob/master/samples/functional/do_reduce.py)。官方代码考虑更周全。
 
 #### filter
 
