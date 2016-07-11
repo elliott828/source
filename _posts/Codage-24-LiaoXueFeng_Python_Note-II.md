@@ -90,7 +90,7 @@ print('str2float(\'123.456\') =', str2float('123.456'))
 官方解决方案[点此](https://github.com/michaelliao/learn-python3/blob/master/samples/functional/do_reduce.py)。官方代码考虑更周全。
 
 #### filter
-
+`filter`与`map`相似的地方是也用一个函数和一个序列为参数，不同之处在于前者把函数**依次**作用于每个元素，后者是同时作用于每个元素。然后`filter`依据返回的`True`或`False`来决定是否保留序列中的元素。
 
 
 
